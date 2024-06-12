@@ -1,0 +1,504 @@
+/* General styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #cf352e;
+}
+
+video {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Header image styles */
+.header-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 165, 0, 0.3);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffdeb6;
+  border-radius: 7px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  background: rgba(255, 165, 0, 0.3);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffdeb6;
+  border-radius: 7px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.3
+  ); /* light orange background with blur effect */
+  backdrop-filter: blur(5px);
+  border-radius: 7px;
+}
+nav ul li a:active {
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.3
+  ); /* light orange background with blur effect */
+  backdrop-filter: blur(5px);
+  border-radius: 7px;
+}
+
+.active-link {
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.3
+  ); /* light orange background with blur effect */
+  backdrop-filter: blur(5px);
+  border-radius: 7px;
+}
+
+/* Main content styles */
+.section-box {
+  background-color: white; /* Set background color to white */
+  padding: 20px; /* Add padding to create space around the content */
+  border-radius: 8px; /* Add rounded corners to the box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.content-wrapper {
+  background-color: white; /* Set background color to white */
+  padding: 20px; /* Add padding to create space around the content */
+  border-radius: 8px; /* Add rounded corners to the box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  margin-top:20px;
+}
+
+.content-wrapper p {
+  font-size: 16px; /* Set the font size */
+  line-height: 1.6; /* Set the line height for better readability */
+  color: #333; /* Set the text color */
+}
+
+.content-wrapper b {
+  font-weight: bold; /* Make bold text */
+  color: #333; /* Set a custom color for bold text */
+}
+
+/* Style bullet points */
+.content-wrapper ul {
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.content-wrapper ul li:before {
+  content: "•"; /* Use a custom bullet character */
+  color: #007bff; /* Set the color of bullet points */
+  display: inline-block;
+  width: 1em; /* Adjust spacing between bullet points */
+  margin-left: -1em; /* Align bullet points properly */
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(255, 165, 0, 0.3);
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-logos a {
+  margin: 0 10px;
+}
+
+.footer-logos img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-section {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+footer h2 {
+  margin-top: 0;
+}
+
+footer h2 span {
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.3
+  ); /* light orange background with blur effect */
+  backdrop-filter: blur(5px);
+  padding: 3px;
+  border: 1px solid #333;
+  border-radius: 7px;
+  font-size: medium;
+}
+
+footer p {
+  margin: 5px 0;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-logos img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-section {
+  margin: 20px 0;
+}
+
+.footer-link {
+  display: inline-block;
+
+  color: #333;
+  text-decoration: none;
+
+  transition: background-color 0.3s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+  border-bottom: 2px solid #333;
+}
+
+footer form p {
+  margin: 5px 0;
+}
+
+footer button {
+  background-color: #007bff;
+  border-radius: 7px;
+  border: 1px solid;
+  font-weight: bolder;
+}
+
+/* ABOUT SECTION */
+#about {
+  line-height: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about h1 {
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  color: #cf352e;
+}
+
+#about img {
+  display: block;
+  margin: 0 auto;
+  width: 18%;
+  height: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  #about img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 25%;
+  }
+}
+
+/* HOME PAGE GRID LAYOUT IMAGES */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-container {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.3
+  ); /* light orange background with blur effect */
+  backdrop-filter: blur(5px);
+  border: 1px solid #333;
+  border-radius: 7px;
+  font-size: medium;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.download-button {
+  width: max-content;
+  height: max-content;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 5px;
+  background-color:#24a0ed ; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+}
+
+
+.download-button:hover {
+  background-color: #0056b3; /* Darken button background color on hover */
+}
+
+/* Contact page css */
+/* Contact page */
+/* General Styles for Contact Page */
+.contact-page {
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#query-contact {
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  flex: 1;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-info strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #666;
+}
+
+.donate-section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.donate-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.donate-info {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.donate-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #query-contact {
+    flex-direction: column;
+  }
+
+  .contact-section,
+  .donate-section {
+    padding: 15px;
+  }
+
+  .contact-section h2,
+  .donate-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info p,
+  .donate-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section,
+  .donate-section {
+    padding: 10px;
+  }
+
+  .contact-section h2,
+  .donate-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .contact-info p,
+  .donate-info p {
+    font-size: 0.8rem;
+  }
+}
+
+.contact-page h2 span {
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.3
+  ); /* light orange background with blur effect */
+  backdrop-filter: blur(5px);
+  padding: 3px;
+  border: 1px solid #333;
+  border-radius: 7px;
+  font-size: medium;
+}
+
+
+/* EVENT SECTION CSS */
+.event-wrapper {
+  background-color: #f9f9f9; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  margin-top: 20px; /* Add space between sections */
+}
+
+.event-image {
+  width: 70%; /* Ensure the image fills the container */
+  border-radius: 8px; /* Add rounded corners to the image */
+  padding-bottom: 50px; /* Add space below the image */
+  display: block;
+  margin: 0 auto;
+}
+
+.event-buttons {
+  display: flex; /* Arrange buttons horizontally */
+  justify-content: center; /* Center align buttons */
+  margin-bottom: 20px; /* Add space below buttons */
+}
+
+.event-buttons a {
+  margin: 0 10px; /* Add space between buttons */
+  padding: 10px 20px; /* Add padding to buttons */
+  background-color:#24a0ed ; /* Set button background color */
+  color: white; /* Set button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Add rounded corners to buttons */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  text-decoration: none;
+}
+
+.event-buttons a:hover {
+  background-color: #0056b3; /* Darken button background color on hover */
+}
+
+@media (max-width: 480px) {
+  .event-buttons a{
+    display: flex;
+    flex-direction: column;
+  }
+}
